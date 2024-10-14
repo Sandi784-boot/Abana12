@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    background-image: url("DALL·E 2024-10-12 01.51.52 - A cleaning team of diverse individuals standing together, wearing uniforms in blue and white. They are holding various cleaning tools like mops, vacuu.webp");
+    height: 100vh;
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    position: relative; 
+    z-index: 1;
+}
+
+.text-overlay {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: #333; 
+    font-size: 24px; 
+    z-index: 2;
+    text-align: center; 
+}
+
+.background-oval {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px 40px; 
+    border-radius: 50px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    display: inline-block; 
+}
+
+.content {
+    background-color: rgb(249, 249, 249); 
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    position: relative; 
+    z-index: 2; 
+}
+
+.box {
+    width: 300px; 
+    text-align: center; 
+    background-color: rgba(255, 255, 255, 1); 
+    margin: 10px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+}
+.box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+.box img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.box p {
+    margin-top: 10px; 
+    font-size: 18px;
+    color: #333; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .box {
+        width: 90%; 
+    }
+
+    .box p {
+        font-size: 16px; 
+    }
+}
